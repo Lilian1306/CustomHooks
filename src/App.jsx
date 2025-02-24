@@ -13,7 +13,9 @@ function App() {
     removeFromCart,
     decreaseQuantity, 
     increaseQuantity, 
-    clearCart
+    clearCart,
+    isEmpty,
+    cartTotal
   } = useCart()
 
 
@@ -25,6 +27,8 @@ function App() {
         increaseQuantity={increaseQuantity}
         decreaseQuantity={decreaseQuantity}
         clearCart={clearCart}
+        isEmpty={isEmpty}
+        cartTotal={cartTotal}
     />
 
     <main className="container-xl mt-5">
